@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front end Mentor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container1">
+        <img src="./images/illustration-hero.svg" alt="illustration-hero" />
+      </div>
+      <div class="container2">
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to million of songs, audiobooks, and podcast on any
+          device whereever you like
+        </p>
+      </div>
+      <div class="container3">
+        <img src="./images/icon-music.svg" alt="icon-music" />
+        <span>
+          <p class="annual">Annual Plan</p>
+          <p class="price">$59.99/year</p>
+        </span>
+        <a class="Change" href="#">Change</a>
+      </div>
+      
+      <button class="Button">Proceed to Payment</button>
+
+      <a class="lastLink" href="#">Cancel Order</a>
+    </main>
+    <script>
+      let button = document.querySelector(".Button");
+      // button.classList.add("Button");
+      // var a = document.querySelectorAll("Button");
+      button.addEventListener("click", function (e) {
+        button.classList.toggle("active");
+      });
+
+      console.dir(button);
+    </script>
+  </body>
+</html>

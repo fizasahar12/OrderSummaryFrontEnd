@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "RedHatNormal";
+  src: url(./Red_Hat_Display/static/RedHatDisplay-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RedHatBold";
+  src: url(./Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "RedHatHeavy";
+  src: url(./Red_Hat_Display/static/RedHatDisplay-Black.ttf);
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  /* width: 50%; */
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+.container1 img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container2 p {
+  color: hsl(224, 23%, 55%);
+  font-family: "RedHatNormal";
+  font-size: 13px;
+}
+.container3 {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 280px;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.price{
+  color: hsl(224, 23%, 55%);
+  font-family: "RedHatNormal";
+  font-size: 13px;
+ }
+
+span {
+  display: flex;
+  /* justify-content: ; */
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.lastLink {
+  font-family: "RedHatBold";
+  color: hsl(224, 23%, 55%);
+  background-color: none;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: hsl(223, 47%, 23%);
+  font-family: "RedHatHeavy";
+}
+.Change {
+  color: hsl(245, 75%, 52%);
+  font-family: "RedHatBold";
+  font-size: 12px;
+}
+
+.Change:focus {
+  color: rgb(112, 102, 253);
+  text-decoration: none;
+}
+
+.annual {
+  color: hsl(223, 47%, 23%);
+  font-family: "RedHatBold";
+  font-size: 14px;
+}
+
+.Button {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 280px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-family: "RedHatBold";
+  border: none;
+  box-shadow: 2px 8px 10px hsl(223, 47%, 23%);
+}
+.Button.active {
+  background-color: rgb(112, 102, 253);
+}
+.Button.active + .lastLink {
+  color: black;
+}
+@media only screen and (max-width: 375px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    /* width: 50%; */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+  }
+  .container1 img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .container2 p {
+    color: hsl(224, 23%, 55%);
+    font-family: "RedHatNormal";
+    font-size: 11px;
+  }
+  .container3 {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    display: flex;
+    /* justify-content: ; */
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  .lastLink {
+    font-family: "RedHatBold";
+    color: hsl(224, 23%, 55%);
+    background-color: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  h2 {
+    margin-bottom: 13px;
+    color: hsl(223, 47%, 23%);
+    font-family: "RedHatHeavy";
+  }
+  .Change {
+    color: hsl(245, 75%, 52%);
+    font-family: "RedHatBold";
+    font-size: 12px;
+  }
+
+  .Change:focus {
+    color: rgb(112, 102, 253);
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .annual {
+    color: hsl(223, 47%, 23%);
+    font-family: "RedHatBold";
+    font-size: 12px;
+  }
+ .price{
+  color: hsl(224, 23%, 55%);
+  font-family: "RedHatNormal";
+  font-size: 12px;
+ }
+  .Button {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 85%;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-family: "RedHatBold";
+    font-size: 12px;
+    border: none;
+    box-shadow: 1px 4px 5px hsl(223, 47%, 23%);
+  }
+  .Button.active {
+    background-color: rgb(112, 102, 253);
+  }
+  .Button.active + .lastLink {
+    color: black;
+  }
+  .container3 img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 337px) {
+}
