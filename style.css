@@ -21,6 +21,8 @@
 }
 
 body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -62,17 +64,18 @@ main {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  width: 280px;
+  width: 90%;
   /* border: 2px solid red; */
+  /* padding: 20px; */
   border-radius: 20px;
   height: 80px;
   margin-bottom: 20px;
 }
-.price{
+.price {
   color: hsl(224, 23%, 55%);
   font-family: "RedHatNormal";
   font-size: 13px;
- }
+}
 
 span {
   display: flex;
@@ -130,6 +133,15 @@ h2 {
   color: black;
 }
 @media only screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+  }
   main {
     display: flex;
     justify-content: center;
@@ -210,11 +222,11 @@ h2 {
     font-family: "RedHatBold";
     font-size: 12px;
   }
- .price{
-  color: hsl(224, 23%, 55%);
-  font-family: "RedHatNormal";
-  font-size: 12px;
- }
+  .price {
+    color: hsl(224, 23%, 55%);
+    font-family: "RedHatNormal";
+    font-size: 12px;
+  }
   .Button {
     margin-bottom: 10px;
     border-radius: 5px;
